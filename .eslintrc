@@ -10,7 +10,7 @@
         "prefer-const" : "error",
         "comma-dangle": ["warn", "always-multiline"],
         "semi": ["warn", "always"],
-        "import/oreder": ["error", {
+        "import/order": ["error", {
             "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
             "newlines-between": "always-and-inside-groups"
         }]

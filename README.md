@@ -2,7 +2,7 @@
 
 ```json
 "scripts": {
-  "lint": "elsint -c .eslintrc --ext .js,.jsx,.ts,.tsx .",
+  "lint": "eslint -c .eslintrc --ext .js,.jsx,.ts,.tsx .",
   "lint:fix": "npm run lint -- --fix"
 }
 ```
@@ -30,7 +30,7 @@ npm run lint:fix
         "prefer-const" : "error",
         "comma-dangle": ["warn", "always-multiline"],
         "semi": ["warn", "always"],
-        "import/oreder": ["error", {
+        "import/order": ["error", {
             "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
             "newlines-between": "always-and-inside-groups"
         }]
