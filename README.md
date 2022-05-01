@@ -28,7 +28,7 @@ npm run lint:fix
         "quotes": ["error", "single"],
         "jsx-quotes": ["error", "prefer-double"],
         "prefer-const" : "error",
-        "comma-dangle": ["warn", "always-multiline"],
+        "comma-dangle": ["warn", "only-multiline"],
         "semi": ["warn", "always"],
         "import/order": ["error", {
             "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object", "type"],
