@@ -1,20 +1,11 @@
-## Available Scripts
 
-```json
-"scripts": {
-  "lint": "eslint -c .eslintrc --ext .js,.jsx,.ts,.tsx .",
-  "lint:fix": "npm run lint -- --fix"
-}
-```
+1) Add ESLint, Prettier extensions
+2) Install all necessary npm packages
+3) Create, configurate `.prettierrc`, `.eslintrc` files
+4) Configurate IDE settings (on `formatOnSave` / `formatOnPaste` / `codeActionOnSave`)
+5) Add scripts in `package.json` file
 
-### `Usage`
 
-```sh
-npm run lint
-```
-```sh
-npm run lint:fix
-```
 ### `Preview` _.eslintrc_
 
 ```json
@@ -104,6 +95,31 @@ npm run lint:fix
     "prettier": "^2.7.1"
   }
 ```
-1) Add ESLint, Prettier extensions
-2) Set Prettier as default formatter
-3) Enable on save formatting
+
+### `Preview` _settings.json_
+``` json
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+```
+## Available Scripts
+
+```json
+"scripts": {
+  "lint": "eslint -c .eslintrc --ext .js,.jsx,.ts,.tsx .",
+  "lint:fix": "npm run lint -- --fix"
+}
+```
+
+### `Usage`
+
+```sh
+npm run lint
+```
+```sh
+npm run lint:fix
+```
+
+
