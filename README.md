@@ -14,7 +14,7 @@
         "browser": true,
         "es2021": true
     },
-    "extends": [
+    "extends": [ // make sure prettier is last
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
@@ -23,12 +23,12 @@
         "plugin:import/typescript",
         "prettier"
     ],
-    "plugins": [
+    "plugins": [ 
         "@typescript-eslint",
         "import",
         "react",
         "react-hooks",
-        "prettier"
+        "prettier" 
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
