@@ -10,6 +10,15 @@
 
 ```json
 {
+    "settings": { 
+        "import/resolver": {
+            "node": {
+                "paths": [ // absolute Imports at relative of src directory
+                    "src"
+                ]
+            }
+        }
+    },
     "env": {
         "browser": true,
         "es2021": true
