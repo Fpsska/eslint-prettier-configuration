@@ -1,4 +1,13 @@
 {
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "src"
+                ]
+            }
+        }
+    },
     "env": {
         "browser": true,
         "es2021": true
@@ -25,7 +34,9 @@
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": [
+            "warn"
+        ],
         "no-console": "warn",
         "quotes": [
             "error",
