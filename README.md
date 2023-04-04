@@ -10,7 +10,7 @@
 
 ```json
 {
-    "settings": { 
+    "settings": {
         "import/resolver": {
             "node": {
                 "paths": [ // absolute Imports at relative of src directory
@@ -32,12 +32,12 @@
         "plugin:import/typescript",
         "prettier"
     ],
-    "plugins": [ 
+    "plugins": [
         "@typescript-eslint",
         "import",
         "react",
         "react-hooks",
-        "prettier" 
+        "prettier"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -45,14 +45,31 @@
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier": "error",
+        "prettier/prettier": [
+            "warn",
+            {
+                "endOfLine": "auto" // solve `CR` warn
+            }
+        ],
         "no-console": "warn",
-        "quotes": ["error", "single"],
-        "jsx-quotes": ["error", "prefer-double"],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "jsx-quotes": [
+            "error",
+            "prefer-double"
+        ],
         "no-unused-vars": "warn",
         "prefer-const": "error",
-        "comma-dangle": ["warn", "never"],
-        "semi": ["warn", "always"],
+        "comma-dangle": [
+            "warn",
+            "never"
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ],
         "@typescript-eslint/no-explicit-any": "off",
         "import/order": [
             "error",
@@ -73,8 +90,6 @@
         "react-hooks/exhaustive-deps": "warn"
     }
 }
-
-
 ```
 
 ### `Preview` _.prettierrc_
